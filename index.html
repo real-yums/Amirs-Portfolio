@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio website for Amir Williams, a Mechanical Engineering student at Western Michigan University interested in Mechanical Design.">
+    <meta name="author" content="Amir Williams">
+    <title>Amir Williams Portfolio</title>
+    <style>
+        :root {
+            --primary-color: #005792;
+            --secondary-color: #f4a261;
+            --background-color: #f9f9f9;
+            --text-color: #333;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .card h2 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .card p {
+            margin: 0.5rem 0;
+        }
+
+        .small-card {
+            padding: 1rem;
+            grid-column: span 1;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            margin-top: 1rem;
+            color: #fff;
+            background-color: var(--secondary-color);
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #e76f51;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            .card {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Amir Williams</h1>
+    </header>
+
+    <main>
+        <div class="card">
+            <h2>Basic Info</h2>
+            <p><strong>Name:</strong> Amir Williams</p>
+            <p><strong>University:</strong> Western Michigan University</p>
+            <p><strong>Major:</strong> Mechanical Engineering</p>
+            <p><strong>Job Interest:</strong> Mechanical Design</p>
+        </div>
+
+        <div class="card">
+            <h2>About Me Cont.</h2>
+            <p>I am a dedicated Mechanical Engineering student with a passion for mechanical design. Through my academic and extracurricular experiences, including my involvement in Bronco Baja Racing and an internship at Gentex Corporation, I have honed my skills in SolidWorks, machine design, and process optimization. I am eager to bring my creativity and technical expertise to the field of mechanical design.</p>
+        </div>
+
+        <div class="card small-card">
+            <h2>Resume</h2>
+            <p>Click below to view or download my resume.</p>
+            <a class="button" href="resume.pdf" target="_blank" rel="noopener noreferrer">View Resume</a>
+        </div>
+
+        <div class="card">
+            <h2>Design Portfolio</h2>
+            <p>Click below to explore my design portfolio.</p>
+            <a class="button" href="portfolio.html" target="_blank" rel="noopener noreferrer">View Portfolio</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Amir Williams. All rights reserved.</p>
+    </footer>
+</body>
+</html>
