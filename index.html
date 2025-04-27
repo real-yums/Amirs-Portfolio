@@ -6,6 +6,7 @@
     <meta name="description" content="Portfolio website for Amir Williams, a Mechanical Engineering student at Western Michigan University interested in Mechanical Design.">
     <meta name="author" content="Amir Williams">
     <title>Amir Williams Portfolio</title>
+
     <style>
         :root {
             --primary-color: #005792;
@@ -105,15 +106,44 @@
                 padding: 1rem;
             }
         }
+
+        /* --- NEW: Special Resume Card Styling --- */
+        .resume-highlight {
+            grid-column: span 2;
+            text-align: center;
+            padding: 3rem 2rem;
+        }
+
+        .resume-highlight h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .resume-highlight p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .resume-highlight .button {
+            font-size: 1.2rem;
+            padding: 1rem 2rem;
+        }
+
+        @media (max-width: 900px) {
+            .resume-highlight {
+                grid-column: span 1;
+            }
+        }
     </style>
 </head>
+
 <body>
     <header>
         <h1>Amir Williams</h1>
     </header>
 
     <main>
-        <div class="card">
+        <div class="card small-card">
             <h2>Basic Info</h2>
             <p><strong>Name:</strong> Amir Williams</p>
             <p><strong>University:</strong> Western Michigan University</p>
@@ -121,20 +151,18 @@
             <p><strong>Job Interest:</strong> Mechanical Design</p>
         </div>
 
-        <div class="card">
+        <div class="card small-card">
             <h2>About Me Cont.</h2>
             <p>I am a dedicated Mechanical Engineering student with a passion for mechanical design. Through my academic and extracurricular experiences, including my involvement in Bronco Baja Racing and an internship at Gentex Corporation, I have honed my skills in SolidWorks, machine design, and process optimization. I am eager to bring my creativity and technical expertise to the field of mechanical design.</p>
         </div>
 
+        <div class="card resume-highlight">
+            <h2>Resume</h2>
+            <p>Click below to view or download my resume.</p>
+            <a class="button" href="resume.pdf" target="_blank" rel="noopener noreferrer">View / Download Resume</a>
+        </div>
+
         <div class="card small-card">
-    <h2>Resume</h2>
-    <p>Click below to view or download my resume.</p>
-    <a class="button" href="resume.pdf" target="_blank" rel="noopener noreferrer">View / Download Resume</a>
-</div>
-
-
-
-        <div class="card">
             <h2>Design Portfolio</h2>
             <p>Click below to explore my design portfolio.</p>
             <a class="button" href="portfolio.html" target="_blank" rel="noopener noreferrer">View Portfolio</a>
